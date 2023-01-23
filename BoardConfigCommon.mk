@@ -177,9 +177,13 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libHtcVteEngine.so|libshim_camera_hima.so \
     /system/vendor/lib/libizat_core.so|libshim_gps_hima.so \
     /system/vendor/lib64/libizat_core.so|libshim_gps_hima.so \
-    /system/vendor/lib64/libril.so|libshim_ril_hima.so
+    /system/vendor/lib64/libril.so|libshim_ril_hima.so \
+    /system/lib64/liblog.so|liblog_htc.so \ 
+    /system/lib/liblog.so|liblog_htc.so \
+    /system/vendor/lib64/libqmi_cci.so|imsdatadaemon \
+    /system/vendor/bin/qmuxd|imsdatadaemon
 
-# Soong namespaces
+ # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/htc/hima-common/liblog_htc
 
